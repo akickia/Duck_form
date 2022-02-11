@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>Duck-form</title>
 </head>
 <body>
-    <div class="section__form">
-        <form action="" target="_blank">
-            <label for="name" class label>FULL NAME</label>
-            <br>
-            <input type="text" name="name" id="name" required>
-            <br>
-            <label for="email">EMAIL</label>
-            <br>
-            <input type="email" name="email" id="email" required minlength="6">
-            <br>
-            <label for="message_regarding">MESSAGE REGARDING</label> 
-            <br>
-            <input type="text" name="message_regarding" id="message_regarding" required>
-            <br>
-            <label for="message">MESSAGE</label>
-            <br>
-            <textarea name="message" id="message" cols="10" rows="3" required maxlength="200"></textarea>
-            <br>
-            <button type="submit">SEND MESSAGE</button>
-        </form>
+    <div class="section">
+        <div class="section__rectangle1">
+            <div class="section__form">
+                <form action="#thank_you">
+                    <label for="name" class="label">full name</label>
+                    <br>
+                    <input type="text" name="name" id="name" required>
+                    <br>
+                    <label for="email" class="label">email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required minlength="6">
+                    <br>
+                    <label for="message_regarding" class="label">message regarding</label> 
+                    <br>
+                    <input type="text" name="message_regarding" id="message_regarding" required>
+                    <br>
+                    <label for="message" class="label">message</label>
+                    <br>
+                    <input type="text" name="message" id="message" placeholder="Your Message" required maxlength="200">
+                    <br><br><br>
+                    <button type="submit">send message</button>
+                </form>
+            </div>
+            <div class="section__img">
+                <img src="images/duck2.jpg">
+            </div>
+        </div>
+        <div class="section__rectangle2">    
+        </div>
     </div>
-    <div class="section__img">
-        <img src="images/duck.jpg">
+    <div class="section thank_you" id="thank_you">
+        <h1>Thank you for your participation!</h1>
+        <img src="images/thank_you.jpg">
     </div>
 </body>
 </html>
