@@ -50,6 +50,10 @@ input {
     border-right: none;
 }
 
+input:hover {
+    transform: scale(1.1);
+}
+
 ::placeholder {
     color: #FDFFFF;
     font-family: 'Roboto', sans-serif;
@@ -86,6 +90,7 @@ button {
     border: none;
     display: flex;
     align-self: center;
+    margin-top: 25px;
 }
 
 button:hover {
